@@ -7,16 +7,16 @@ github: nlwstein
 linkedin: nlwstein
 profile: 
   title: Profile
-  description: Enthusiastic, highly motivated, and empathetic technology team leader and software engineer who is passionate about converting complex concepts into functional code.
+  description: Enthusiastic, highly motivated, and empathetic software engineer who is passionate about converting complex concepts into functional code.
 skills: 
   title: Main Technical Skills
   entries: 
   - title: Backend Software Engineering
-    description: My passion is developing the systems that the end user rarely interacts with directly, but absolutely must be in place (and function reliably enough) for them to have a satisfactory experience. Most of my experience has been with the C#, PHP, and JavaScript (Node, browser, and proprietary server-side scripting) languages. Of course, if the feature absolutely requires the use of AutoHotkey scripting, then you unfortunately have to use it, regardless of preference.
-  - title: Database Design &amp; Integration
-    description: I have also used both SQL-based and non-SQL-based collection type databases, both in design of the database and in access through an application, utilizing ORMs, or some other sane data access layer. I have used MySQL / MariaDB, MongoDB, and HPE Vertica.
+    description: My passion is developing the systems that the end user rarely interacts with directly, but absolutely must be in place (and function reliably enough) for them to have a satisfactory experience. My preferences lately have been to use Python and run on Kubernetes via Docker images, but if the task requires another language, the core programming tenets are usually the same on other stacks. I have significant professional experience with JavaScript (Node and client side), C#, and PHP as well. 
+  - title: Linux Administration, DevOps
+    description: I have automated countless builds through tools like GitHub Actions, served on on-call rotations, and built custom alarms using tools like Loki, Grafana, OpsGenie, and Nagios. I am very comfortable with Kubernetes and the modern containerized approach to releasing software. 
   - title: Project Management
-    description: From a project management standpoint, most of my experience has been with the Agile development methodology, using the Atlassian tools (BitBucket, JIRA, Confluence) with CD implemented through Bamboo, Jenkins or equivalent.
+    description: From a project management standpoint, most of my experience has been with the Agile development methodology, using the Atlassian toolset. 
 experience: 
   - name: SmarterTravel
     location: Cambridge, MA
