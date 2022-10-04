@@ -12,11 +12,11 @@ skills:
   title: Main Technical Skills
   entries: 
   - title: Backend Software Engineering
-    description: My passion is developing the systems that the end user rarely interacts with directly, but absolutely must be in place (and function reliably enough) for them to have a satisfactory experience. My preferences lately have been to use Python and run on Kubernetes via Docker images, but if the task requires another language, the core programming tenets are usually the same on other stacks. I have significant professional experience with JavaScript (Node and client side), C#, and PHP as well, and have dabbled in Ruby, Go, and Java. 
+    description: My passion is developing the systems that the end user rarely interacts with directly, but absolutely must be in place (and function reliably enough) for them to have a satisfactory experience. My preferences lately have been to use Python and run on Kubernetes via Docker images, but if the task requires another language, the core programming tenets are usually the same on other stacks. I have significant experience with JavaScript (Node and client side), C#, and PHP as well, and have dabbled in Ruby, Go, and Java. 
   - title: DevOps
     description: I have automated countless builds through tools like GitHub Actions, served on on-call rotations, and built custom alarms using tools like Loki, Grafana, OpsGenie, and Nagios. I am very comfortable with Kubernetes and the modern containerized approach to releasing software. 
   - title: Linux Administration
-    description: Most of my professional career has been spent with Linux as the target environment. Working with Linux is also a lifelong hobby for me - I have self-hosted applications spanning nearly 50 containers including some custom code running on my home server, with automated DNS, HTTPS, and CI/CD. 
+    description: Most of my professional career has been spent with Linux as the target environment. These days that means working with Docker images most of the time, but I am comfortable untangling messes on servers. Working with Linux is also a lifelong hobby for me - I have self-hosted applications running on my home network, with automated DNS, HTTPS, and CI/CD. 
   - title: Project Management
     description: From a project management standpoint, most of my experience has been with the Agile development methodology, using the Atlassian toolset. 
 experience: 
