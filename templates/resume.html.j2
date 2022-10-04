@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <meta charset="utf-8">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>{{name}} | {{ title }}</title>
+    <link href="assets/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+        #footer {
+            display: none;
+        }
+
+        #footer+p {
+            width: 100%;
+            font-size: 11px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>{{name}}</h1>
+        <h2>{{title}}</h2>
+        <blockquote>
+            <p><a href="mailto:{{email}}">{{email}}</a>
+                {{phone}}
+                {{city}}</p>
+        </blockquote>
+        <hr />
+        <h3 id="profile">{{profile.title}}</h3>
+        <p>{{profile.description}}</p>
+        <hr />
+        <h3 id="skills">{{skills.title}}</h3>
+        <ul>
+            {% for skill in skills.entries %}
+            <li>
+                <dl>
+                    <dt>{{skill.title}}</dt>
+                    <dd>{{skill.description}}</dd>
+                </dl>
+            </li>
+            {% endfor %}
+        </ul>
+        <hr />
+        <h3 id="experience">Experience</h3>
+        {% for organization in experience %}
+        {% for position in organization.positions %}
+        <dl>
+            <dt>{{organization.name}} | <em>{{position.name}}</em></dt>
+            <strong>{{position.start}} - {{position.end}}</strong>
+        </dl>
+        <ul>
+            {% for detail in position.details %}
+            <li>{{detail}}</li>
+            {% endfor %}
+        </ul>
+        {% endfor %}
+        {% endfor %}
+        <hr />
+        <h3 id="education">Education</h3>
+        <hr />
+        <p>{{education}}</p>
+        <hr />
+        <h3 id="footer">Footer</h3>
+        <p>{{name}} &#8212; <a href="mailto:{{email}}">{{email}}</a> &#8212; {{phone}} &#8212;
+            <a href="https://www.linkedin.com/in/{{linkedin}}">https://www.linkedin.com/in/{{linkedin}}</a>
+        </p>
+        <hr />
+    </div>
+</body>
+
+</html>
