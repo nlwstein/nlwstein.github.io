@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
     <meta charset="utf-8">
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
     <meta http-equiv="Pragma" content="no-cache" />
@@ -17,23 +18,25 @@
             width: 100%;
             font-size: 11px;
         }
+        @media print {
+            a:after { content:''; }
+            a[href]:after { content: none !important; }
+        }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <h1>{{name}}</h1>
-        <h2>{{title}}</h2>
-        <blockquote>
-            <p><a href="mailto:{{email}}">{{email}}</a>
-                {{phone}}
-                {{city}}</p>
-        </blockquote>
+        <h4>{{name}} | {{title}}</h4>
+        <p><a href="mailto:{{email}}">{{email}}</a>
+            {{phone}}
+            {{city}}</p>
         <hr />
-        <h3 id="profile">{{profile.title}}</h3>
+        <h4 id="profile">{{profile.title}}</h4>
         <p>{{profile.description}}</p>
         <hr />
-        <h3 id="skills">{{skills.title}}</h3>
+        {% if skills %}
+        <h4 id="skills">{{skills.title}}</h4>
         <ul>
             {% for skill in skills.entries %}
             <li>
@@ -45,12 +48,12 @@
             {% endfor %}
         </ul>
         <hr />
-        <h3 id="experience">Experience</h3>
+        {% endif %}
+        <h4 id="experience">Experience</h4>
         {% for organization in experience %}
         {% for position in organization.positions %}
         <dl>
-            <dt>{{organization.name}} | <em>{{position.name}}</em></dt>
-            <strong>{{position.start}} - {{position.end}}</strong>
+            <dt>{{organization.name}} | <em>{{position.name}}</em> | <strong>{{position.start}} - {{position.end}}</strong></dt>
         </dl>
         <ul>
             {% for detail in position.details %}
@@ -60,13 +63,12 @@
         {% endfor %}
         {% endfor %}
         <hr />
-        <h3 id="education">Education</h3>
-        <hr />
+        <h4 id="education">Education</h4>
         <p>{{education}}</p>
         <hr />
         <h3 id="footer">Footer</h3>
         <p>{{name}} &#8212; <a href="mailto:{{email}}">{{email}}</a> &#8212; {{phone}} &#8212;
-            <a href="https://www.linkedin.com/in/{{linkedin}}">https://www.linkedin.com/in/{{linkedin}}</a> &#8212; <a href="{{repo}}">{{repo_tagline}}</a>
+            <a href="https://www.linkedin.com/in/{{linkedin}}">https://www.linkedin.com/in/{{linkedin}}</a>
         </p>
     </div>
 </body>

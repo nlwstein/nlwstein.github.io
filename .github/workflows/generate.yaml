@@ -13,9 +13,13 @@ jobs:
         python-version: '3.10' 
     - run: pip install -r requirements.txt
     - run: python generate.py > index.html
+    - uses: fifsky/html-to-pdf-action@master
+      with:
+        htmlFile: ./index.html
+        outputFile: ./resume.pdf
     - uses: stefanzweifel/git-auto-commit-action@v4
       with: 
-        file_pattern: 'index.html'
+        file_pattern: 'index.html resume.pdf'
         commit_user_name: Nick Stein
         commit_user_email: nick@nickstein.net
         commit_author: Nick Stein <nick@nickstein.net> 
