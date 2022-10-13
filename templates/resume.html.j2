@@ -7,7 +7,7 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
-    <title>{{name}} | {{ title }}</title>
+    <title>{{name}}</title>
     <link href="assets/bootstrap.min.css" rel="stylesheet">
     <style type="text/css">
         #footer {
@@ -28,9 +28,7 @@
 <body>
     <div class="container">
         <h4>{{name}} | {{title}}</h4>
-        <p><a href="mailto:{{email}}">{{email}}</a>
-            {{phone}}
-            {{city}}</p>
+        <p><a href="mailto:{{email}}">{{email}}</a> | {{phone}} | {{city}}</p>
         <hr />
         <h4 id="profile">{{profile.title}}</h4>
         <p>{{profile.description}}</p>
