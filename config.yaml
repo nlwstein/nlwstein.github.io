@@ -27,9 +27,10 @@ experience:
       start: July 2021
       end: September 2022
       details: 
-        - Built and maintained software features for an email pipeline capable of sending over 50 million messages per day on a Python / Kubernetes / Kafka / Redshift stack
-        - Provided Ops for multiple business units, including maintenance and R&D for shared services, an on-call schedule, developing custom alarms in Nagios and Loki
-        - Automated a large number of builds for projects on GitHub Actions
+        - Built and maintained features for email pipeline sending 50+ million daily messages on a Python / Kubernetes / Kafka / Redshift stack
+        - Ops management for multiple business units, including an on-call schedule and custom alarms in Nagios and Loki
+        - R&D for shared services, such as migrating Kubernetes cluster from Kops to EKS
+        - Automated a large number of builds for projects on GitHub Actions, including migration from CircleCI on a org with 300+ repos
   - name: Trellis
     location: Malden, MA
     positions: 
@@ -37,37 +38,38 @@ experience:
       start: July 2020
       end: July 2021
       details: 
-      - Built and maintained tooling for automating developer time tracking and client billing
-      - Assisted engineering teams with spikes and design documentation for novel projects (such as headless e-commerce)
+      - Developed tooling for automated time-tracking and client billing
+      - Served as highest escalation point for engineering challenges
+      - Mentored engineering teams by providing spikes and design documentation for novel projects (such as headless e-commerce)
     - name: Director of Engineering
       start: October 2018
       end: July 2020
       details: 
       - Facilitated technical escalations from the Tech Leads and Project Management
-      - Assisted the Project Management team with understanding the unique skills of each developer to help assign the right team members to their projects
-      - Worked to get IC developers to 80% billable and Tech Leads to 65% billable consistently every week
-      - Managed the entire backend engineering team, conducting 1x1s, performance reviews and other managerial functions for a team of 15+ full time engineers and contractors
+      - Collaborated with Project Management team to plan team member project assignments
+      - Increased IC developers to 80% billable and Tech Leads to 65% billable consistently
+      - Managed 15+ member backend engineering team, conducting 1x1s and performance reviews
     - name: Lead Senior Software Engineer
       start: July 2018
       end: October 2018
       details: 
       - Team Lead for a highly effective software engineering team with several direct reports
-      - Software Engineering mentor and general Linux/Unix resource for junior developers
-      - Built several applications to automate internal workflows, integrating tools like Google Sheets and JIRA to generate reports
+      - Mentor and general Linux/Unix resource for junior developers
+      - Built applications to automate internal workflows, integrating tools like Google Sheets and JIRA to generate reports
     - name: Senior Software Engineer
       start: April 2018
       end: July 2018
       details: 
-      - Architected and built frontend applications using Vue.js that pull data via custom WordPress APIs
+      - Designed frontend applications using Vue.js that pull data via custom WordPress APIs
       - Architected and built integrations with third-party services like point-of-sale and product information management platforms
-      - Created CI/CD pipelines on various cloud platforms (Bitbucket Pipelines, Codeship, etc.) to automate deployments
+      - Configured CI/CD pipelines on various cloud platforms (Bitbucket Pipelines, Codeship, etc.) to automate deployments
     - name: Software Engineer
       start: September 2017
       end: April 2018
       details: 
       - Individual Contributor on many Magento 1 and Magento 2 client projects
-      - Created a highly flexible, admin configurable, SVG-manipulation based frontend application that allows a user to heavily customize a product in Magento 2
-      - Integrated PACE Anti-Piracy SDK into Magento 2 so that a client's checkout flow could seamlessly deploy licenses to iLok users
+      - Created a highly flexible, admin configurable, SVG-manipulation based frontend application that allows a user to customize a product in Magento 2
+      - Integrated PACE Anti-Piracy SDK into Magento 2 for a seamless license delivery mechanism
   - name: GSN Games (Game Show Network)
     location: Boston, MA
     positions: 
@@ -75,9 +77,9 @@ experience:
       start: April 2016
       end: September 2017
       details: 
-      - Built new features for, and maintained existing ones, on an abstraction layer for Unity that controls multiple native video advertising SDKs
-      - Created a solution for integrating a native survey provider into Unity without leveraging their Android / iOS SDKs
-      - Created a build script that generated and built an Android Gradle project on Unity 5.3
+      - Built new features on an abstraction layer for Unity that controls multiple native video advertising SDKs
+      - Integrated a native survey provider into Unity without leveraging their Android / iOS SDKs
+      - Developed a build script that generated and built an Android Gradle project on Unity 5.3
       - Created an Android (Java) plugin to marshall data between a native advertising plugin and Unity
   - name: OYO Sports
     location: Acton, MA
@@ -87,9 +89,9 @@ experience:
       end: March 2016
       details:
       - Delivered a Magento-based ecommerce solution with a small team under a tight deadline
-      - Created a distributed graphics automation pipeline leveraging C#, Python, and JavaScript which was used to create multiple product lines consisting of more than 100 SKUs each
-      - Built a centralized API (Silex) for all of OYO Sports' online infrastructure
-      - Worked with AWS, Ansible
+      - Created a distributed graphics automation pipeline leveraging C#, Python, and JavaScript generating multiple product lines of 100+ SKUs
+      - Built a centralized API for all online infrastructure
+      - Managed Linux and Windows servers hosted on AWS and in-house, leveraging ops tools such as Ansible
 education: B.S. Computer Information Technology | Champlain College, 2013
 repo_tagline: View code 🤖
 repo: https://github.com/nlwstein/nlwstein.github.io
