@@ -34,15 +34,15 @@ experience:
       start: October 2018
       end: July 2020
       details: 
-      - Facilitated technical escalations from the Tech Leads and Project Management
-      - Collaborated with Project Management team to plan team member project assignments
+      - Facilitated technical escalations from Tech Leads and Project Management
+      - Collaborated with Project Management to plan team member project assignments
       - Increased IC developers to 80% billable and Tech Leads to 65% billable consistently
-      - Managed 15+ member backend engineering team, conducting 1x1s and performance reviews
+      - Managed 15+ member backend team, conducting 1x1s and performance reviews
     - name: Lead Senior Software Engineer
       start: July 2018
       end: October 2018
       details: 
-      - Team Lead for a highly effective software engineering team with several direct reports
+      - Team Lead for highly effective team with several direct reports
       - Mentor and general Linux/Unix resource for junior developers
       - Built applications to automate internal workflows, integrating tools like Google Sheets and JIRA to generate reports
     - name: Senior Software Engineer
@@ -57,7 +57,7 @@ experience:
       end: April 2018
       details: 
       - Individual Contributor on many Magento 1 and Magento 2 client projects
-      - Created a highly flexible, admin configurable, SVG-manipulation based frontend application that allows a user to customize a product in Magento 2
+      - Created an SVG-manipulation based frontend application that allows a user to customize a product in Magento 2
       - Integrated PACE Anti-Piracy SDK into Magento 2 for a seamless license delivery mechanism
   - name: GSN Games (Game Show Network)
     location: Boston, MA
@@ -66,9 +66,9 @@ experience:
       start: April 2016
       end: September 2017
       details: 
-      - Built new features on an abstraction layer for Unity that controls multiple native video advertising SDKs
-      - Integrated a native survey provider into Unity without leveraging their Android / iOS SDKs
-      - Developed a build script that generated and built an Android Gradle project on Unity 5.3
+      - Built new features on an abstraction layer for Unity controlling native video advertising SDKs
+      - Integrated native survey provider into Unity without leveraging their Android / iOS SDKs
+      - Developed build script that generated and built an Android Gradle project on Unity 5.3
       - Created an Android (Java) plugin to marshall data between a native advertising plugin and Unity
   - name: OYO Sports
     location: Acton, MA
@@ -77,9 +77,9 @@ experience:
       start: July 2014
       end: March 2016
       details:
-      - Delivered a Magento-based ecommerce solution with a small team under a tight deadline
-      - Created a distributed graphics automation pipeline leveraging C#, Python, and JavaScript generating multiple product lines of 100+ SKUs
-      - Built a centralized API for all online infrastructure
+      - Delivered Magento-based ecommerce solution with a small team under a tight deadline
+      - Created distributed graphics automation pipeline leveraging C#, Python, and JavaScript generating multiple product lines of 100+ SKUs
+      - Built centralized API for all online infrastructure
       - Managed Linux and Windows servers hosted on AWS and in-house, leveraging ops tools such as Ansible
 education: B.S. Computer Information Technology | Champlain College, 2013
 repo_tagline: View code 🤖
