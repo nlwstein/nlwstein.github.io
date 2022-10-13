@@ -19,7 +19,7 @@ experience:
         - Built and maintained features for email pipeline sending 50+ million daily messages on a Python / Kubernetes / Kafka / Redshift stack
         - Ops management for multiple business units, including an on-call schedule and custom alarms in Nagios and Loki
         - R&D for shared services such as migrating Kubernetes cluster from Kops to EKS
-        - Automated a large number of builds for projects on GitHub Actions, including migration from CircleCI on a org with 300+ repos
+        - Automated a large number of builds for projects on GitHub Actions, including migration from CircleCI on a 300+ repos org
   - name: Trellis
     location: Malden, MA
     positions: 
