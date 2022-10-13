@@ -50,9 +50,9 @@
         <h4 id="experience">Experience</h4>
         {% for organization in experience %}
         {% for position in organization.positions %}
-        <dl>
-            <dt>{{organization.name}} | <em>{{position.name}}</em> | <strong>{{position.start}} - {{position.end}}</strong></dt>
-        </dl>
+        <b>
+            {{organization.name}} | <em>{{position.name}}</em> | <strong>{{position.start}} - {{position.end}}</strong>
+        </b>
         <ul>
             {% for detail in position.details %}
             <li>{{detail}}</li>
