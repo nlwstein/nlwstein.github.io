@@ -17,7 +17,7 @@ jobs:
       with:
         htmlFile: ./index.html
         outputFile: ./resume.pdf
-        pdfOptions: '{"format": "A4", "margin": {"top": "10mm", "left": "10mm", "right": "10mm", "bottom": "10mm"}}'
+        pdfOptions: '{"format": "A4", "margin": {"top": "8mm", "left": "8mm", "right": "8mm", "bottom": "8mm"}}'
     - uses: stefanzweifel/git-auto-commit-action@v4
       with: 
         file_pattern: 'index.html resume.pdf'
