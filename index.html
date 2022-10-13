@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
     <meta charset="utf-8">
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
     <meta http-equiv="Pragma" content="no-cache" />
@@ -17,23 +18,25 @@
             width: 100%;
             font-size: 11px;
         }
+        @media print {
+            a:after { content:''; }
+            a[href]:after { content: none !important; }
+        }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <h1>Nick Stein</h1>
-        <h2>Software Engineer</h2>
-        <blockquote>
-            <p><a href="mailto:nick@nickstein.net">nick@nickstein.net</a>
-                (617) 448-1192
-                Arlington, MA</p>
-        </blockquote>
+        <h4>Nick Stein | Software Engineer</h4>
+        <p><a href="mailto:nick@nickstein.net">nick@nickstein.net</a>
+            (617) 448-1192
+            Arlington, MA</p>
         <hr />
-        <h3 id="profile">Profile</h3>
+        <h4 id="profile">Profile</h4>
         <p>Enthusiastic, highly motivated, and empathetic software engineer who is passionate about converting complex concepts into functional code.</p>
         <hr />
-        <h3 id="skills">Main Technical Skills</h3>
+        
+        <h4 id="skills">Main Technical Skills</h4>
         <ul>
             
             <li>
@@ -66,12 +69,12 @@
             
         </ul>
         <hr />
-        <h3 id="experience">Experience</h3>
+        
+        <h4 id="experience">Experience</h4>
         
         
         <dl>
-            <dt>SmarterTravel | <em>Senior Software Engineer</em></dt>
-            <strong>July 2021 - September 2022</strong>
+            <dt>SmarterTravel | <em>Senior Software Engineer</em> | <strong>July 2021 - September 2022</strong></dt>
         </dl>
         <ul>
             
@@ -86,8 +89,7 @@
         
         
         <dl>
-            <dt>Trellis | <em>Software Architect</em></dt>
-            <strong>July 2020 - July 2021</strong>
+            <dt>Trellis | <em>Software Architect</em> | <strong>July 2020 - July 2021</strong></dt>
         </dl>
         <ul>
             
@@ -98,8 +100,7 @@
         </ul>
         
         <dl>
-            <dt>Trellis | <em>Director of Engineering</em></dt>
-            <strong>October 2018 - July 2020</strong>
+            <dt>Trellis | <em>Director of Engineering</em> | <strong>October 2018 - July 2020</strong></dt>
         </dl>
         <ul>
             
@@ -114,8 +115,7 @@
         </ul>
         
         <dl>
-            <dt>Trellis | <em>Lead Senior Software Engineer</em></dt>
-            <strong>July 2018 - October 2018</strong>
+            <dt>Trellis | <em>Lead Senior Software Engineer</em> | <strong>July 2018 - October 2018</strong></dt>
         </dl>
         <ul>
             
@@ -128,8 +128,7 @@
         </ul>
         
         <dl>
-            <dt>Trellis | <em>Senior Software Engineer</em></dt>
-            <strong>April 2018 - July 2018</strong>
+            <dt>Trellis | <em>Senior Software Engineer</em> | <strong>April 2018 - July 2018</strong></dt>
         </dl>
         <ul>
             
@@ -142,8 +141,7 @@
         </ul>
         
         <dl>
-            <dt>Trellis | <em>Software Engineer</em></dt>
-            <strong>September 2017 - April 2018</strong>
+            <dt>Trellis | <em>Software Engineer</em> | <strong>September 2017 - April 2018</strong></dt>
         </dl>
         <ul>
             
@@ -158,8 +156,7 @@
         
         
         <dl>
-            <dt>GSN Games (Game Show Network) | <em>Software Engineer, Monetization</em></dt>
-            <strong>April 2016 - September 2017</strong>
+            <dt>GSN Games (Game Show Network) | <em>Software Engineer, Monetization</em> | <strong>April 2016 - September 2017</strong></dt>
         </dl>
         <ul>
             
@@ -176,8 +173,7 @@
         
         
         <dl>
-            <dt>OYO Sports | <em>Junior Software Engineer</em></dt>
-            <strong>July 2014 - March 2016</strong>
+            <dt>OYO Sports | <em>Junior Software Engineer</em> | <strong>July 2014 - March 2016</strong></dt>
         </dl>
         <ul>
             
@@ -193,13 +189,12 @@
         
         
         <hr />
-        <h3 id="education">Education</h3>
-        <hr />
+        <h4 id="education">Education</h4>
         <p>B.S. Computer Information Technology | Champlain College, 2013</p>
         <hr />
         <h3 id="footer">Footer</h3>
         <p>Nick Stein &#8212; <a href="mailto:nick@nickstein.net">nick@nickstein.net</a> &#8212; (617) 448-1192 &#8212;
-            <a href="https://www.linkedin.com/in/nlwstein">https://www.linkedin.com/in/nlwstein</a> &#8212; <a href="https://github.com/nlwstein/nlwstein.github.io">View code 🤖</a>
+            <a href="https://www.linkedin.com/in/nlwstein">https://www.linkedin.com/in/nlwstein</a>
         </p>
     </div>
 </body>
