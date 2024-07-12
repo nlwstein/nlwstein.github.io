@@ -9,6 +9,17 @@ profile:
   title: Profile
   description: Enthusiastic, highly motivated, and empathetic software engineer who is passionate about converting complex concepts into functional code.
 experience: 
+  - name: MBTA
+    location: Boston, MA
+    positions: 
+    - name: Senior Software Engineer, Transit Data
+      start: December 2022
+      end: July 2024
+      details: 
+        - Built and maintained features for Elixir-based real time tracking and predictions for Boston's public transit system
+        - Handled time-sensitive GTFS updates for real-world scheduling changes, such as shuttles and other diversions 
+        - Converted complex GTFS feed builder from a Makefile to a Dagster pipeline, comprising over 100 tables with many interdependencies
+        - Collaborated with ops team to manage necessary changes to our infrastructure-as-code setup in Terraform
   - name: SmarterTravel
     location: Cambridge, MA
     positions: 
