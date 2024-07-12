@@ -5,93 +5,93 @@ city: Arlington, MA
 email: nick@nickstein.net
 github: nlwstein
 linkedin: nlwstein
-profile: 
+profile:
   title: Profile
   description: Enthusiastic, highly motivated, and empathetic software engineer who is passionate about converting complex concepts into functional code.
-experience: 
+experience:
   - name: MBTA
     location: Boston, MA
-    positions: 
-    - name: Senior Software Engineer, Transit Data
-      start: December 2022
-      end: July 2024
-      details: 
-        - Built and maintained features for Elixir-based real time tracking and predictions for Boston's public transit system
-        - Handled time-sensitive GTFS updates for real-world scheduling changes, such as shuttles and other diversions 
-        - Converted complex GTFS feed builder from a Makefile to a Dagster pipeline, comprising over 100 tables with many interdependencies
-        - Collaborated with ops team to manage necessary changes to our infrastructure-as-code setup in Terraform
+    positions:
+      - name: Senior Software Engineer, Transit Data
+        start: December 2022
+        end: July 2024
+        details:
+          - Built and maintained features for Elixir-based real time tracking and predictions for Boston's public transit system
+          - Handled time-sensitive GTFS updates for real-world scheduling changes, such as shuttles and other diversions
+          - Converted complex GTFS feed builder from a Makefile to a Dagster pipeline, comprising over 100 tables with many interdependencies
+          - Collaborated with ops team to manage necessary changes to our infrastructure-as-code setup in Terraform
   - name: SmarterTravel
     location: Cambridge, MA
-    positions: 
-    - name: Senior Software Engineer
-      start: July 2021
-      end: September 2022
-      details: 
-        - Built and maintained features for email pipeline sending 50+ million daily messages on a Python / Kubernetes / Kafka / Redshift stack
-        - Ops management for multiple business units, including an on-call schedule and custom alarms in Nagios and Loki
-        - R&D for shared services such as migrating Kubernetes cluster from Kops to EKS
-        - Automated a large number of builds for projects on GitHub Actions, including migration from CircleCI on a 300+ repos org
+    positions:
+      - name: Senior Software Engineer
+        start: July 2021
+        end: September 2022
+        details:
+          - Built and maintained features for email pipeline sending 50+ million daily messages on a Python / Kubernetes / Kafka / Redshift stack
+          - Ops management for multiple business units, including an on-call schedule and custom alarms in Nagios and Loki
+          - R&D for shared services such as migrating Kubernetes cluster from Kops to EKS
+          - Automated a large number of builds for projects on GitHub Actions, including migration from CircleCI on a 300+ repos org
   - name: Trellis
     location: Malden, MA
-    positions: 
-    - name: Software Architect
-      start: July 2020
-      end: July 2021
-      details: 
-      - Developed tooling for automated time-tracking and client billing
-      - Served as highest escalation point for engineering challenges
-      - Mentored engineering teams by providing spikes and design documentation for novel projects (such as headless e-commerce)
-    - name: Director of Engineering
-      start: October 2018
-      end: July 2020
-      details: 
-      - Facilitated technical escalations from Tech Leads and Project Management
-      - Collaborated with Project Management to plan team member project assignments
-      - Increased IC developers to 80% billable and Tech Leads to 65% billable consistently
-      - Managed 15+ member backend team, conducting 1x1s and performance reviews
-    - name: Lead Senior Software Engineer
-      start: July 2018
-      end: October 2018
-      details: 
-      - Team Lead for highly effective team with several direct reports
-      - Mentor and general Linux/Unix resource for junior developers
-      - Built applications to automate internal workflows, integrating tools like Google Sheets and JIRA to generate reports
-    - name: Senior Software Engineer
-      start: April 2018
-      end: July 2018
-      details: 
-      - Designed frontend applications using Vue.js that pull data via custom WordPress APIs
-      - Architected and built integrations with third-party services like point-of-sale and product information management platforms
-      - Configured CI/CD pipelines on various cloud platforms (Bitbucket Pipelines, Codeship, etc.) to automate deployments
-    - name: Software Engineer
-      start: September 2017
-      end: April 2018
-      details: 
-      - Individual Contributor on many Magento 1 and Magento 2 client projects
-      - Created an SVG-manipulation plugin for customizing a product on Magento 2
-      - Integrated PACE Anti-Piracy SDK into Magento 2 for a seamless license delivery mechanism
+    positions:
+      - name: Software Architect
+        start: July 2020
+        end: July 2021
+        details:
+          - Developed tooling for automated time-tracking and client billing
+          - Served as highest escalation point for engineering challenges
+          - Mentored engineering teams by providing spikes and design documentation for novel projects (such as headless e-commerce)
+      - name: Director of Engineering
+        start: October 2018
+        end: July 2020
+        details:
+          - Facilitated technical escalations from Tech Leads and Project Management
+          - Collaborated with Project Management to plan team member project assignments
+          - Increased IC developers to 80% billable and Tech Leads to 65% billable consistently
+          - Managed 15+ member backend team, conducting 1x1s and performance reviews
+      - name: Lead Senior Software Engineer
+        start: July 2018
+        end: October 2018
+        details:
+          - Team Lead for highly effective team with several direct reports
+          - Mentor and general Linux/Unix resource for junior developers
+          - Built applications to automate internal workflows, integrating tools like Google Sheets and JIRA to generate reports
+      - name: Senior Software Engineer
+        start: April 2018
+        end: July 2018
+        details:
+          - Designed frontend applications using Vue.js that pull data via custom WordPress APIs
+          - Architected and built integrations with third-party services like point-of-sale and product information management platforms
+          - Configured CI/CD pipelines on various cloud platforms (Bitbucket Pipelines, Codeship, etc.) to automate deployments
+      - name: Software Engineer
+        start: September 2017
+        end: April 2018
+        details:
+          - Individual Contributor on many Magento 1 and Magento 2 client projects
+          - Created an SVG-manipulation plugin for customizing a product on Magento 2
+          - Integrated PACE Anti-Piracy SDK into Magento 2 for a seamless license delivery mechanism
   - name: GSN Games (Game Show Network)
     location: Boston, MA
-    positions: 
-    - name: Software Engineer, Monetization
-      start: April 2016
-      end: September 2017
-      details: 
-      - Built new features on an abstraction layer for Unity controlling native video advertising SDKs
-      - Integrated native survey provider into Unity without leveraging their Android / iOS SDKs
-      - Developed build script that generated and built an Android Gradle project on Unity 5.3
-      - Created an Android (Java) plugin to marshall data between a native advertising plugin and Unity
+    positions:
+      - name: Software Engineer, Monetization
+        start: April 2016
+        end: September 2017
+        details:
+          - Built new features on an abstraction layer for Unity controlling native video advertising SDKs
+          - Integrated native survey provider into Unity without leveraging their Android / iOS SDKs
+          - Developed build script that generated and built an Android Gradle project on Unity 5.3
+          - Created an Android (Java) plugin to marshall data between a native advertising plugin and Unity
   - name: OYO Sports
     location: Acton, MA
-    positions: 
-    - name: Junior Software Engineer
-      start: July 2014
-      end: March 2016
-      details:
-      - Delivered Magento-based ecommerce solution with a small team under a tight deadline
-      - Created distributed graphics automation pipeline leveraging C#, Python, and JavaScript generating multiple product lines of 100+ SKUs
-      - Built centralized API for all online infrastructure
-      - Managed Linux and Windows servers hosted on AWS and in-house, leveraging ops tools such as Ansible
+    positions:
+      - name: Junior Software Engineer
+        start: July 2014
+        end: March 2016
+        details:
+          - Delivered Magento-based ecommerce solution with a small team under a tight deadline
+          - Created distributed graphics automation pipeline leveraging C#, Python, and JavaScript generating multiple product lines of 100+ SKUs
+          - Built centralized API for all online infrastructure
+          - Managed Linux and Windows servers hosted on AWS and in-house, leveraging ops tools such as Ansible
 education: B.S. Computer Information Technology | Champlain College, 2013
 repo_tagline: View code 🤖
 repo: https://github.com/nlwstein/nlwstein.github.io
