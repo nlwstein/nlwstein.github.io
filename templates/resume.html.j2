@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    
+
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -11,25 +11,137 @@
     })(window,document,'script','dataLayer','{{gtm}}');</script>
     <!-- End Google Tag Manager -->
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
-    <title>{{name}}</title>
-    <link href="assets/bootstrap.min.css" rel="stylesheet">
+    <title>{{name}} &#8212; {{title}}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style type="text/css">
-        #footer {
-            display: none;
+        :root {
+            --ink: #1a1d23;
+            --muted: #5b6270;
+            --rule: #d9dde3;
+            --accent: #1f5fa8;
         }
 
-        #footer+p {
-            width: 100%;
-            font-size: 11px;
+        * { box-sizing: border-box; }
+
+        html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+
+        body {
+            margin: 0;
+            background: #ffffff;
+            color: var(--ink);
+            font-family: "Inter", -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+            font-size: 10.5pt;
+            line-height: 1.45;
         }
+
+        .page {
+            max-width: 8.5in;
+            margin: 0 auto;
+            padding: 0.55in 0.6in;
+        }
+
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        /* Header */
+        header { margin-bottom: 18px; }
+        h1 {
+            margin: 0;
+            font-size: 24pt;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            line-height: 1.1;
+        }
+        .headline {
+            margin: 2px 0 8px;
+            font-size: 12pt;
+            font-weight: 500;
+            color: var(--accent);
+        }
+        .contact {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px 0;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            color: var(--muted);
+            font-size: 9.5pt;
+        }
+        .contact li + li::before {
+            content: "\00b7";
+            margin: 0 8px;
+            color: var(--rule);
+            font-weight: 700;
+        }
+
+        /* Sections */
+        section { margin-top: 16px; }
+        h2 {
+            margin: 0 0 8px;
+            padding-bottom: 4px;
+            border-bottom: 1.5px solid var(--ink);
+            font-size: 9.5pt;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+        }
+        p { margin: 0; }
+
+        /* Experience */
+        .org { margin-bottom: 12px; }
+        .role { break-inside: avoid-page; }
+        .org-head, .role-head {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 12px;
+        }
+        .org-name { font-size: 11pt; font-weight: 700; }
+        .org-location { color: var(--muted); font-size: 9.5pt; white-space: nowrap; }
+        .role { margin-top: 3px; }
+        .role + .role { margin-top: 7px; }
+        .role-name { font-weight: 600; }
+        .role-dates {
+            color: var(--muted);
+            font-size: 9.5pt;
+            white-space: nowrap;
+            font-variant-numeric: tabular-nums;
+        }
+        ul.details { margin: 3px 0 0; padding-left: 16px; }
+        ul.details li { margin: 1px 0; padding-left: 2px; }
+        ul.details li::marker { color: var(--muted); }
+
+        /* Skills */
+        .skills { display: grid; grid-template-columns: max-content 1fr; gap: 3px 14px; margin: 0; }
+        .skills dt { font-weight: 600; }
+        .skills dd { margin: 0; }
+
+        footer {
+            margin-top: 24px;
+            color: var(--muted);
+            font-size: 8.5pt;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            .page { padding: 24px 16px; }
+            .org-head, .role-head { flex-direction: column; gap: 0; }
+            .skills { grid-template-columns: 1fr; }
+        }
+
+        @page { size: letter; margin: 0.45in 0.5in; }
         @media print {
-            a:after { content:''; }
-            a[href]:after { content: none !important; }
+            body { font-size: 10pt; }
+            .page { max-width: none; padding: 0; }
+            footer { display: none; }
         }
     </style>
 </head>
@@ -40,49 +152,69 @@
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-    <div class="container">
-        <h4>{{name}}</h4>
-        <p><a href="mailto:{{email}}">{{email}}</a> | {{phone}} | {{city}}</p>
-        <hr />
-        <h4 id="profile">{{profile.title}}</h4>
-        <p>{{profile.description}}</p>
-        <hr />
+    <main class="page">
+        <header>
+            <h1>{{name}}</h1>
+            <p class="headline">{{title}}</p>
+            <ul class="contact">
+                <li>{{city}}</li>
+                <li><a href="mailto:{{email}}">{{email}}</a></li>
+                <li><a href="https://www.linkedin.com/in/{{linkedin}}">linkedin.com/in/{{linkedin}}</a></li>
+                <li><a href="https://github.com/{{github}}">github.com/{{github}}</a></li>
+            </ul>
+        </header>
+
+        <section id="profile">
+            <h2>{{profile.title}}</h2>
+            <p>{{profile.description}}</p>
+        </section>
+
         {% if skills %}
-        <h4 id="skills">{{skills.title}}</h4>
-        <ul>
-            {% for skill in skills.entries %}
-            <li>
-                <dl>
-                    <dt>{{skill.title}}</dt>
-                    <dd>{{skill.description}}</dd>
-                </dl>
-            </li>
-            {% endfor %}
-        </ul>
-        <hr />
+        <section id="skills">
+            <h2>{{skills.title}}</h2>
+            <dl class="skills">
+                {% for skill in skills.entries %}
+                <dt>{{skill.title}}</dt>
+                <dd>{{skill.description}}</dd>
+                {% endfor %}
+            </dl>
+        </section>
         {% endif %}
-        <h4 id="experience">Experience</h4>
-        {% for organization in experience %}
-        {% for position in organization.positions %}
-        <b>
-            {{organization.name}} | <em>{{position.name}}</em> | <strong>{{position.start}} - {{position.end}}</strong>
-        </b>
-        <ul>
-            {% for detail in position.details %}
-            <li>{{detail}}</li>
+
+        <section id="experience">
+            <h2>Experience</h2>
+            {% for organization in experience %}
+            <div class="org">
+                <div class="org-head">
+                    <span class="org-name">{{organization.name}}</span>
+                    <span class="org-location">{{organization.location}}</span>
+                </div>
+                {% for position in organization.positions %}
+                <div class="role">
+                    <div class="role-head">
+                        <span class="role-name">{{position.name}}</span>
+                        <span class="role-dates">{{position.start}} &#8211; {{position.end}}</span>
+                    </div>
+                    <ul class="details">
+                        {% for detail in position.details %}
+                        <li>{{detail}}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                {% endfor %}
+            </div>
             {% endfor %}
-        </ul>
-        {% endfor %}
-        {% endfor %}
-        <hr />
-        <h4 id="education">Education</h4>
-        <p>{{education}}</p>
-        <hr />
-        <h3 id="footer">Footer</h3>
-        <p>{{name}} &#8212; <a href="mailto:{{email}}">{{email}}</a> &#8212; {{phone}} &#8212;
-            <a href="https://www.linkedin.com/in/{{linkedin}}">https://www.linkedin.com/in/{{linkedin}}</a>
-        </p>
-    </div>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <p>{{education}}</p>
+        </section>
+
+        {% if repo %}
+        <footer><a href="{{repo}}">{{repo_tagline}}</a></footer>
+        {% endif %}
+    </main>
 </body>
 
 </html>
