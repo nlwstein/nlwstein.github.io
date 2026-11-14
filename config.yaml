@@ -1,5 +1,5 @@
 name: Nick Stein
-title: Software Engineer
+title: Staff Software Engineer
 city: Arlington, MA
 email: nick@nickstein.net
 github: nlwstein
@@ -7,8 +7,21 @@ linkedin: nlwstein
 gtm: GTM-T36LTXW8
 profile:
   title: Profile
-  description: Enthusiastic, highly motivated, and empathetic software engineer who is passionate about converting complex concepts into functional code.
+  description: Platform-minded software engineer with over a decade of experience across data pipelines, cloud infrastructure, and product development. I build the shared tooling and systems that let other engineers and scientists ship faster, and I like turning messy, complex problems into reliable, well-tested code.
 experience:
+  - name: Caris Life Sciences
+    location: Remote
+    positions:
+      - name: Staff Software Engineer, Data Science Engineering
+        start: September 2024
+        end: Present
+        details:
+          - Lead the shared AWS CDK libraries and GitLab CI templates that build, test, release, and deploy 40+ data science repositories across dozens of AWS accounts; authored 900+ merged MRs and reviewed 1,000+
+          - Replaced long-lived CI credentials with GitLab OIDC federation, split into read-only and deploy roles, plus a preflight job that detects missing trust and opens the fix automatically
+          - Rebuilt the clinical-genomic data delivery system as a config-driven Metaflow and Step Functions engine with de-identification, pre- and post-delivery validation, parity testing against the legacy system, and Distributed Map fan-out for large file deliveries
+          - Built and operate an internal LLM research assistant (Open WebUI, AWS Bedrock, MCP tool servers on ECS) that lets scientists explore a large real-world oncology dataset in natural language, including a dedicated deployment for a major oncology conference
+          - Shipped LLM-based document processing for clinical intake, covering page classification, field extraction with confidence scoring, duplicate detection, supervisor reporting, and an end-to-end accuracy test suite in CI
+          - Own the team's developer platform, including an internal CLI ported from Python to Rust, pre-baked Ubuntu EC2 workstation images with FSx Lustre, Metaflow infrastructure scaling, and shared AI agent tooling (Cursor rules, skills, MCP servers)
   - name: MBTA
     location: Boston, MA
     positions:
@@ -16,10 +29,10 @@ experience:
         start: December 2022
         end: July 2024
         details:
-          - Built and maintained features for Elixir-based real time tracking and predictions for Boston's public transit system
-          - Handled time-sensitive GTFS updates for real-world scheduling changes, such as shuttles and other diversions
-          - Converted complex GTFS feed builder from a Makefile to a Dagster pipeline, comprising over 100 tables with many interdependencies
-          - Collaborated with ops team to manage necessary changes to our infrastructure-as-code setup in Terraform
+          - Built and maintained the Elixir services behind real-time vehicle tracking and arrival predictions for Boston's public transit system
+          - Shipped time-sensitive GTFS updates for real-world service changes such as shuttles and diversions
+          - Migrated a GTFS feed builder of 100+ interdependent tables from Makefiles to a Dagster pipeline
+          - Partnered with the ops team on Terraform infrastructure-as-code changes
   - name: SmarterTravel
     location: Cambridge, MA
     positions:
@@ -27,10 +40,10 @@ experience:
         start: July 2021
         end: September 2022
         details:
-          - Built and maintained features for email pipeline sending 50+ million daily messages on a Python / Kubernetes / Kafka / Redshift stack
-          - Ops management for multiple business units, including an on-call schedule and custom alarms in Nagios and Loki
-          - R&D for shared services such as migrating Kubernetes cluster from Kops to EKS
-          - Automated a large number of builds for projects on GitHub Actions, including migration from CircleCI on a 300+ repos org
+          - Built features for an email pipeline sending 50+ million messages daily on Python, Kubernetes, Kafka, and Redshift
+          - Ran on-call and alerting (Nagios, Loki) for multiple business units
+          - Led shared-services R&D, including migrating the Kubernetes platform from kops to EKS
+          - Migrated CI for a 300+ repository organization from CircleCI to GitHub Actions
   - name: Trellis
     location: Malden, MA
     positions:
@@ -38,38 +51,38 @@ experience:
         start: July 2020
         end: July 2021
         details:
-          - Developed tooling for automated time-tracking and client billing
-          - Served as highest escalation point for engineering challenges
-          - Mentored engineering teams by providing spikes and design documentation for novel projects (such as headless e-commerce)
+          - Built tooling that automated time tracking and client billing
+          - Served as the final escalation point for engineering challenges
+          - Mentored teams with spikes and design documents for novel projects such as headless e-commerce
       - name: Director of Engineering
         start: October 2018
         end: July 2020
         details:
-          - Facilitated technical escalations from Tech Leads and Project Management
-          - Collaborated with Project Management to plan team member project assignments
-          - Increased IC developers to 80% billable and Tech Leads to 65% billable consistently
-          - Managed 15+ member backend team, conducting 1x1s and performance reviews
+          - Managed a 15+ person backend team, including 1:1s and performance reviews
+          - Consistently kept individual contributors at 80% billable and tech leads at 65%
+          - Planned team project assignments with project management
+          - Resolved technical escalations from tech leads and project managers
       - name: Lead Senior Software Engineer
         start: July 2018
         end: October 2018
         details:
-          - Team Lead for highly effective team with several direct reports
-          - Mentor and general Linux/Unix resource for junior developers
-          - Built applications to automate internal workflows, integrating tools like Google Sheets and JIRA to generate reports
+          - Led a high-performing team with several direct reports
+          - Mentored junior developers and served as the team's Linux/Unix resource
+          - Built internal workflow automation integrating Google Sheets and Jira for reporting
       - name: Senior Software Engineer
         start: April 2018
         end: July 2018
         details:
-          - Designed frontend applications using Vue.js that pull data via custom WordPress APIs
-          - Architected and built integrations with third-party services like point-of-sale and product information management platforms
-          - Configured CI/CD pipelines on various cloud platforms (Bitbucket Pipelines, Codeship, etc.) to automate deployments
+          - Built Vue.js frontends backed by custom WordPress APIs
+          - Designed integrations with third-party point-of-sale and product information management platforms
+          - Set up CI/CD pipelines on Bitbucket Pipelines, Codeship, and other platforms to automate deployments
       - name: Software Engineer
         start: September 2017
         end: April 2018
         details:
-          - Individual Contributor on many Magento 1 and Magento 2 client projects
-          - Created an SVG-manipulation plugin for customizing a product on Magento 2
-          - Integrated PACE Anti-Piracy SDK into Magento 2 for a seamless license delivery mechanism
+          - Delivered Magento 1 and Magento 2 projects for many clients
+          - Built an SVG-manipulation plugin for product customization on Magento 2
+          - Integrated the PACE Anti-Piracy SDK into Magento 2 for automated license delivery
   - name: GSN Games (Game Show Network)
     location: Boston, MA
     positions:
@@ -77,10 +90,10 @@ experience:
         start: April 2016
         end: September 2017
         details:
-          - Built new features on an abstraction layer for Unity controlling native video advertising SDKs
-          - Integrated native survey provider into Unity without leveraging their Android / iOS SDKs
-          - Developed build script that generated and built an Android Gradle project on Unity 5.3
-          - Created an Android (Java) plugin to marshall data between a native advertising plugin and Unity
+          - Built features on a Unity abstraction layer over native video advertising SDKs
+          - Integrated a native survey provider into Unity without its Android or iOS SDKs
+          - Wrote a build script that generated and built an Android Gradle project from Unity 5.3
+          - Created an Android (Java) plugin to pass data between a native advertising SDK and Unity
   - name: OYO Sports
     location: Acton, MA
     positions:
@@ -88,10 +101,10 @@ experience:
         start: July 2014
         end: March 2016
         details:
-          - Delivered Magento-based ecommerce solution with a small team under a tight deadline
-          - Created distributed graphics automation pipeline leveraging C#, Python, and JavaScript generating multiple product lines of 100+ SKUs
-          - Built centralized API for all online infrastructure
-          - Managed Linux and Windows servers hosted on AWS and in-house, leveraging ops tools such as Ansible
+          - Delivered a Magento e-commerce site with a small team on a tight deadline
+          - Built a distributed graphics automation pipeline (C#, Python, JavaScript) that generated multiple product lines of 100+ SKUs
+          - Built a centralized API for all online infrastructure
+          - Managed Linux and Windows servers on AWS and on-premises with Ansible
 education: B.S. Computer Information Technology | Champlain College, 2013
 repo_tagline: View code 🤖
 repo: https://github.com/nlwstein/nlwstein.github.io
