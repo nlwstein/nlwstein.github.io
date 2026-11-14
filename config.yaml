@@ -10,7 +10,7 @@ profile:
   description: Platform-minded software engineer with over a decade of experience across data pipelines, cloud infrastructure, and product development. I build the shared tooling and systems that let other engineers and scientists ship faster, and I like turning messy, complex problems into reliable, well-tested code.
 experience:
   - name: Caris Life Sciences
-    location: Remote
+    location: Cambridge, MA
     positions:
       - name: Staff Software Engineer, Data Science Engineering
         start: September 2024
